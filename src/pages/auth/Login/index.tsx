@@ -1,7 +1,7 @@
-import useSignup from "./useSignup";
+import useLogin from "./useLogin";
 
-const Signup = () => {
-    const {submit} = useSignup()
+const Login = () => {
+    const {submit} = useLogin()
     return (<>
     <div className="bg-slate-400 p-4 w-fit m-auto">
         <h2>Signup</h2>
@@ -17,4 +17,4 @@ const Signup = () => {
     </>);
 }
  
-export default Signup;
+export default Login;

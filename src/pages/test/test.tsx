@@ -60,8 +60,8 @@ const Test = () => {
                 <p key={el.id}>{`${el.id} ==> ${el.name}`}</p>
             ))}
 
-            <button onClick={() => handleAdd()}>add post</button>
-            <button onClick={() => handleDelete("728d")}>delete post</button>
+            <button className="bg-slate-300 m-1 p-2" onClick={() => handleAdd()}>add post</button>
+            <button className="bg-slate-300 m-1 p-2" onClick={() => handleDelete("ba3e")}>delete post</button>
         </>
     );
 };
