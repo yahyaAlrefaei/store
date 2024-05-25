@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "yahya"
+    },
+    {
+      "id": 2,
+      "name": "ahmed"
+    },
+    {
+      "id": 3,
+      "name": "alaa"
+    },
+    {
+      "id": 4,
+      "name": "mohamed"
+    },
+    {
+      "id": 5,
+      "name": "hamza"
+    },
+    {
+      "id": 6,
+      "name": "sara"
+    },
+    {
+      "id": "7d25",
+      "name": "aya"
+    },
+    {
+      "id": "ba3e",
+      "name": "aya"
+    }
+  ]
+}
