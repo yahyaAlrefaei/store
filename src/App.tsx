@@ -1,4 +1,5 @@
 import "./App.css";
+import RootLayout from "./layout/RootLayout";
 import About from "./pages/about";
 import AuthLayout from "./pages/auth/AuthLayout";
 import Login from "./pages/auth/Login";
@@ -8,9 +9,10 @@ import Test from "./pages/test/test";
 import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom";
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Home/>}>
-      <Route index element={<About />} />
-      <Route path="/test" element={<Test />} />
+  <Route path="/" element={<RootLayout/>}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="test" element={<Test />} />
     
   
     <Route path="/auth" element={<AuthLayout />}>
