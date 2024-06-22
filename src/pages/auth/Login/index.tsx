@@ -1,20 +1,23 @@
 import useLogin from "./useLogin";
 
 const Login = () => {
-    const {submit} = useLogin()
+    const { onSubmit, formRef, handleSubmit, register, style } = useLogin()
     return (<>
-    <div className="bg-slate-400 p-4 w-fit m-auto">
-        <h2>Signup</h2>
-        <form className="grid">
-            <input type="text" name="first_name" />
-            <input type="text" name="last_name" />
-            <input type="email" name="email" />
-            <input type="password" name="pasword" />
-            <input type="password" name="confirm_password" />
-            <button onClick={submit}>submit</button>
+       <main className="flex justify-center items-center h-svh">
+      <div className="bg-primary-50 p-8 w-[100%] max-w-[500px]">
+        <h2 className="text-primary-color text-3xl text-center mb-4">Login</h2>
+        <form className="grid" onSubmit={handleSubmit(onSubmit)}>
+
+          <label htmlFor="first_name">firstname</label>
+          <input className={style} type="email" {...register("email")} />
+          <label htmlFor="first_name">firstname</label>
+          <input className={style} type="password" {...register("password")} />
+
+          <button type="submit" className="bg-primary-color text-secondary text-lg p-3">submit</button>
         </form>
-    </div>
+      </div>
+    </main>
     </>);
 }
- 
+
 export default Login;
